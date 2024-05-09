@@ -313,9 +313,9 @@
 					}
 				},
 				{
-					"type": "CardiffTitle",
+					"type": "CaerphillyTitle",
 					"properties": {
-						"text": "Caerphilly 0/20",
+						"text": "Caerphilly 0/6",
 						"enable-bbcode": true,
 						"font": "monospace",
 						"size": 25,
@@ -341,7 +341,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 116,
+						"x": 123,
 						"y": 541,
 						"width": 294.242650436296,
 						"height": 41.65175171649605,
