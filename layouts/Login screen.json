@@ -225,7 +225,7 @@
 					"properties": {
 						"text": "Cestyll Cymreig\nExplore Welsh Castles",
 						"enable-bbcode": true,
-						"font": "monospace",
+						"font": "josefin sans",
 						"size": 45,
 						"line-height": 0,
 						"bold": false,
