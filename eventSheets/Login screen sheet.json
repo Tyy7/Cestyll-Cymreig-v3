@@ -1,0 +1,30 @@
+{
+	"name": "Login screen sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 765524594652325,
+					"parameters": {
+						"object": "Login"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 591423298531455,
+					"parameters": {
+						"layout": "Castle Select"
+					}
+				}
+			],
+			"sid": 275135542728837
+		}
+	],
+	"sid": 884095061944664
+}

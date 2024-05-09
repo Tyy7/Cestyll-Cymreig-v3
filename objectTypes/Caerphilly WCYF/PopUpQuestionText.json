@@ -1,0 +1,15 @@
+{
+	"name": "PopUpQuestionText",
+	"plugin-id": "Text",
+	"sid": 347778014377312,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 746811718177515
+		}
+	],
+	"effectTypes": []
+}

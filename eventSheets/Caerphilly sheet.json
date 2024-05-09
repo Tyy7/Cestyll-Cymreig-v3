@@ -1,0 +1,657 @@
+{
+	"name": "Caerphilly sheet",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CaerphillyScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 824778224029245
+		},
+		{
+			"eventType": "variable",
+			"name": "Points",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 985616522935582
+		},
+		{
+			"eventType": "variable",
+			"name": "cCatapult",
+			"type": "string",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 663952862060963
+		},
+		{
+			"eventType": "variable",
+			"name": "correctAnswer",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 673395792689711
+		},
+		{
+			"eventType": "variable",
+			"name": "whichQuestion",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 546507778199455
+		},
+		{
+			"eventType": "variable",
+			"name": "CheckIcon",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 257579410026183
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 346514508813384
+				}
+			],
+			"actions": [],
+			"sid": 203205474183076,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 683803745585179,
+							"parameters": {
+								"variable": "cCatapult",
+								"comparison": 0,
+								"value": "\"true\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Catapult",
+							"sid": 229984057506279,
+							"parameters": {
+								"opacity": "25"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CatapultText",
+							"sid": 175559468983056,
+							"parameters": {
+								"opacity": "25"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CheckIcon",
+							"sid": 818181852347959,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 686449230263719
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 124880553418542,
+					"parameters": {
+						"object": "Catapult"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 271595906239156,
+					"parameters": {
+						"variable": "cCatapult",
+						"comparison": 0,
+						"value": "\"false\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestion",
+					"sid": 812722152544766,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "PopUpQuestion",
+					"sid": 639350734899186,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PopUpQuestion",
+					"sid": 990043645956622,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestionText",
+					"sid": 687041072475279,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "PopUpQuestionText",
+					"sid": 498151819135058,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 687568999840669,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 682764178117043,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 198539289686957,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 403558177601206,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 998797646324569,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 317932822795631,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 980382926095971,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 493798220128303,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 774765137112273,
+					"parameters": {
+						"variable": "Points",
+						"value": "25"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 771530722875535,
+					"parameters": {
+						"text": "Catapult.answer1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 492683269512767,
+					"parameters": {
+						"text": "Catapult.answer2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 548945021331729,
+					"parameters": {
+						"variable": "correctAnswer",
+						"value": "\"400 BC\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 608163121127042,
+					"parameters": {
+						"variable": "whichQuestion",
+						"value": "\"Catapult\""
+					}
+				}
+			],
+			"sid": 121056553164631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 902062632074109,
+					"parameters": {
+						"object": "CaerphillyAnswer1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "CheckIcon",
+					"sid": 112812128261230,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 118132914307142,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "CaerphillyAnswer1",
+							"sid": 899552498707993,
+							"parameters": {
+								"text-to-compare": "correctAnswer",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "correctAnswer",
+							"sid": 943520614654358
+						}
+					],
+					"sid": 592574530993994
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 835509074989081
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 139558082335098,
+							"parameters": {
+								"variable": "Points",
+								"value": "-5"
+							}
+						}
+					],
+					"sid": 634704736639140
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 125590060607360,
+					"parameters": {
+						"object": "CaerphillyAnswer2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 854769822479553,
+					"parameters": {
+						"opacity": "25"
+					}
+				}
+			],
+			"sid": 993828735659615,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "CaerphillyAnswer2",
+							"sid": 894776197987916,
+							"parameters": {
+								"text-to-compare": "correctAnswer",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "correctAnswer",
+							"sid": 472809356884045
+						}
+					],
+					"sid": 319616843192016
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 446151157734973
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 650727394426610,
+							"parameters": {
+								"variable": "Points",
+								"value": "-5"
+							}
+						}
+					],
+					"sid": 981781356361473
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 796632864459280,
+					"parameters": {
+						"object": "CaerphillyAnswer3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 252554038205417,
+					"parameters": {
+						"variable": "Points",
+						"value": "-5"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 784156213521669,
+					"parameters": {
+						"opacity": "25"
+					}
+				}
+			],
+			"sid": 765793751328626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 348138991365451,
+					"parameters": {
+						"object": "CaerphillyAnswer4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 980173919335563,
+					"parameters": {
+						"variable": "Points",
+						"value": "-5"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 147947709542797,
+					"parameters": {
+						"opacity": "25"
+					}
+				}
+			],
+			"sid": 812720696932886
+		},
+		{
+			"functionName": "correctAnswer",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 437564640431803,
+					"parameters": {
+						"variable": "CaerphillyScore",
+						"value": "Points"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreCaerphilly",
+					"sid": 751918840667645,
+					"parameters": {
+						"text": "CaerphillyScore"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestion",
+					"sid": 160754997452517,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 997397877807221,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 990161806628568,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 193649170521348,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 142148911616420,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestionText",
+					"sid": 856867967563515,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 612079055115190,
+					"parameters": {
+						"key": "\"c-\" & whichQuestion",
+						"value": "\"true\""
+					}
+				}
+			],
+			"sid": 477027360443663,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 235180108307832,
+							"parameters": {
+								"first-value": "whichQuestion",
+								"comparison": 0,
+								"second-value": "\"Catapult\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Catapult",
+							"sid": 960086202331003,
+							"parameters": {
+								"opacity": "75"
+							}
+						}
+					],
+					"sid": 327235152641105
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 324541002427544,
+					"parameters": {
+						"object": "Dragons"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestion",
+					"sid": 230676805139038,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PopUpQuestion",
+					"sid": 337955212795361,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "PopUpQuestion",
+					"sid": 301285705753400,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DragonsQuestion",
+					"sid": 415281079660414,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "DragonsQuestion",
+					"sid": 851091806653403,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 884411708994693
+		}
+	],
+	"sid": 889684610355628
+}

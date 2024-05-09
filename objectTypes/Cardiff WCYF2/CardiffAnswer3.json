@@ -1,0 +1,15 @@
+{
+	"name": "CardiffAnswer3",
+	"plugin-id": "Text",
+	"sid": 640434220283245,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 879926633051558
+		}
+	],
+	"effectTypes": []
+}

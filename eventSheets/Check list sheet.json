@@ -1,0 +1,78 @@
+{
+	"name": "Check list sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 169202343950833,
+					"parameters": {
+						"object": "CastleIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 736946368455961,
+					"parameters": {
+						"layout": "Castle Select"
+					}
+				}
+			],
+			"sid": 651568623978689
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 793396619077538,
+					"parameters": {
+						"object": "AccountIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 158056084759710,
+					"parameters": {
+						"layout": "Acount Screen"
+					}
+				}
+			],
+			"sid": 316230478128131
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 385521813800879,
+					"parameters": {
+						"object": "CaerphillyIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 949138619396722,
+					"parameters": {
+						"layout": "Caerphilly screen"
+					}
+				}
+			],
+			"sid": 343105737280043
+		}
+	],
+	"sid": 385141762802875
+}

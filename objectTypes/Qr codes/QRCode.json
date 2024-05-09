@@ -1,0 +1,10 @@
+{
+	"name": "QRCode",
+	"plugin-id": "Sparsha_qrCode",
+	"sid": 709541692569561,
+	"singleglobal-inst": {
+		"type": "QRCode",
+		"properties": {},
+		"uid": 57
+	}
+}

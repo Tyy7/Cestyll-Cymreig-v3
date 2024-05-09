@@ -1,0 +1,65 @@
+{
+	"name": "CardiffCastle",
+	"plugin-id": "Sprite",
+	"sid": 942320603883884,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "answer1",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 124735950152942
+		},
+		{
+			"name": "answer2",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 386355840198863
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 197,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6939110,
+						"collisionPoly": {
+							"points": [
+								0.05859375,
+								0,
+								1,
+								0.07614213197969544,
+								0.9375,
+								1,
+								0,
+								0.9238578680203046
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 879162302608131,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

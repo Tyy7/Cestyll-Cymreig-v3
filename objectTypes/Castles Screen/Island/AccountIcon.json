@@ -1,0 +1,88 @@
+{
+	"name": "AccountIcon",
+	"plugin-id": "Sprite",
+	"sid": 576231243057053,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2567714,
+						"collisionPoly": {
+							"points": [
+								0.47,
+								0.085,
+								0.53,
+								0.085,
+								0.71,
+								0.14,
+								0.76,
+								0.175,
+								0.825,
+								0.24,
+								0.86,
+								0.29,
+								0.915,
+								0.47,
+								0.915,
+								0.53,
+								0.825,
+								0.76,
+								0.76,
+								0.825,
+								0.53,
+								0.915,
+								0.47,
+								0.915,
+								0.24,
+								0.825,
+								0.175,
+								0.76,
+								0.14,
+								0.71,
+								0.085,
+								0.53,
+								0.085,
+								0.47,
+								0.115,
+								0.34,
+								0.14,
+								0.29,
+								0.175,
+								0.24,
+								0.24,
+								0.175,
+								0.29,
+								0.14,
+								0.34,
+								0.115
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 733144219082573,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

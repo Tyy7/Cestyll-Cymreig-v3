@@ -1,0 +1,15 @@
+{
+	"name": "CaerphillyAnswer1",
+	"plugin-id": "Text",
+	"sid": 699897283862573,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 135757494768608
+		}
+	],
+	"effectTypes": []
+}

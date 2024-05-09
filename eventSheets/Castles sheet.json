@@ -1,0 +1,216 @@
+{
+	"name": "Castles sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 656817762680284,
+					"parameters": {
+						"object": "CaerphillyIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 729286981767006,
+					"parameters": {
+						"layout": "Qr Scanner"
+					}
+				}
+			],
+			"sid": 322819946508738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 257888099372556,
+					"parameters": {
+						"object": "CaerphillyTitle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 845130756357119,
+					"parameters": {
+						"layout": "Check list"
+					}
+				}
+			],
+			"sid": 645335264816056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 256976471259092,
+					"parameters": {
+						"object": "SearchIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 622993254341269,
+					"parameters": {
+						"layout": "Check list"
+					}
+				}
+			],
+			"sid": 607685160568170
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 360893326415539,
+					"parameters": {
+						"object": "AccountIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 245151860600085,
+					"parameters": {
+						"layout": "Acount Screen"
+					}
+				}
+			],
+			"sid": 766949811020533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 916911348944931
+				}
+			],
+			"actions": [
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 438071485574661,
+					"parameters": {
+						"key": "\"c-Catapult\""
+					}
+				}
+			],
+			"sid": 388616170895021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 819035219536771,
+					"parameters": {
+						"key": "\"c-Catapult\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 859613622464157,
+					"parameters": {
+						"key": "\"c-Catapult\""
+					}
+				}
+			],
+			"sid": 762134393767451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 288590057625434,
+					"parameters": {
+						"key": "\"c-Catapult\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 403143129069763,
+					"parameters": {
+						"variable": "cCatapult",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 629485204690365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-double-tap",
+					"objectClass": "Touch",
+					"sid": 905877792528153
+				}
+			],
+			"actions": [
+				{
+					"id": "clear-storage",
+					"objectClass": "LocalStorage",
+					"sid": 932134600907375
+				}
+			],
+			"sid": 539782229679559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-storage-cleared",
+					"objectClass": "LocalStorage",
+					"sid": 141533759072906
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "alert(\"Clear\")"
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 469543649633180,
+					"parameters": {
+						"variable": "cCatapult",
+						"value": "\"false\""
+					}
+				}
+			],
+			"sid": 938179995861582
+		}
+	],
+	"sid": 887095065958455
+}

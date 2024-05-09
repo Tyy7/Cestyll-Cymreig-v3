@@ -1,0 +1,54 @@
+{
+	"name": "Account sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 895201271725481,
+					"parameters": {
+						"object": "CastleIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 717481064477395,
+					"parameters": {
+						"layout": "Castle Select"
+					}
+				}
+			],
+			"sid": 765952174696177
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 965780307122319,
+					"parameters": {
+						"object": "SearchIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 997492307605480,
+					"parameters": {
+						"layout": "Check list"
+					}
+				}
+			],
+			"sid": 278110215268741
+		}
+	],
+	"sid": 765953534341527
+}

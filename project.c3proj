@@ -1,0 +1,358 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 38802,
+	"name": "Cestyll Cymreig",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_qrCode",
+			"name": "QR Code",
+			"author": "Sparsha",
+			"bundled": false,
+			"version": "4.0.0"
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "UserMedia",
+			"name": "User Media",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "swvw9v8afx3",
+	"objectTypes": {
+		"items": [
+			"Touch",
+			"IconHolder",
+			"Title",
+			"QRCamera",
+			"CheckIcon",
+			"Dragons",
+			"DragonsText",
+			"DragonsQuestion"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Background",
+					"welshDragon",
+					"Login",
+					"LoginInput",
+					"PasswordInput",
+					"Register"
+				],
+				"subfolders": [],
+				"name": "Login screen"
+			},
+			{
+				"items": [
+					"RedBackground",
+					"SelectAcastle"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"CaerphillyIcon",
+							"CaerphillyTitle",
+							"HolderText",
+							"ScoreText"
+						],
+						"subfolders": [],
+						"name": "Caerphilly"
+					},
+					{
+						"items": [
+							"Cardiff"
+						],
+						"subfolders": [],
+						"name": "Cardiff"
+					},
+					{
+						"items": [
+							"SearchIcon",
+							"AccountIcon",
+							"CastleIcon",
+							"Island",
+							"Seperator"
+						],
+						"subfolders": [],
+						"name": "Island"
+					}
+				],
+				"name": "Castles Screen"
+			},
+			{
+				"items": [
+					"ChecklistTitle"
+				],
+				"subfolders": [],
+				"name": "Checklist"
+			},
+			{
+				"items": [
+					"AccountTitle"
+				],
+				"subfolders": [],
+				"name": "Account screen"
+			},
+			{
+				"items": [
+					"Caerphilly",
+					"Catapult",
+					"PopUpQuestion",
+					"CaerphillyAnswer1",
+					"CaerphillyAnswer2",
+					"CatapultText",
+					"PopUpQuestionText",
+					"CaerphillyAnswer3",
+					"CaerphillyAnswer4",
+					"LocalStorage",
+					"ScoreCaerphilly"
+				],
+				"subfolders": [],
+				"name": "Caerphilly WCYF"
+			},
+			{
+				"items": [
+					"QRCode",
+					"UserMedia",
+					"Text"
+				],
+				"subfolders": [],
+				"name": "Qr codes"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Login screen",
+			"Castle Select",
+			"Check list",
+			"Acount Screen",
+			"Caerphilly screen",
+			"Qr Scanner"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Login screen sheet",
+			"Castles sheet",
+			"Check list sheet",
+			"Account sheet",
+			"Caerphilly sheet",
+			"Qr event sheet"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 400041826587978,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 771130462969946,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 803364846236852,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 371948346848097,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 134950788760797,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 366828395531766,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 995112994467483,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1080,
+	"viewportHeight": 1920,
+	"firstLayout": null
+}
