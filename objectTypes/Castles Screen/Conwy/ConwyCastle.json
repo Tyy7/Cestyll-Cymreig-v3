@@ -1,7 +1,7 @@
 {
-	"name": "Island",
+	"name": "ConwyCastle",
 	"plugin-id": "Sprite",
-	"sid": 791942334258502,
+	"sid": 434784772339780,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,24 +11,24 @@
 			{
 				"frames": [
 					{
-						"width": 1090,
+						"width": 380,
 						"height": 254,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2452147,
+						"imageSpriteId": 3836145,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
-								1,
+								0.06315789473684211,
 								0,
 								1,
+								0.09448818897637795,
+								0.9368421052631579,
 								1,
 								0,
-								0.9960629921259843
+								0.905511811023622
 							]
 						},
 						"useCollisionPoly": true,
@@ -36,7 +36,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 511641400732152,
+				"sid": 976845442783809,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

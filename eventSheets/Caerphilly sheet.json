@@ -651,6 +651,78 @@
 				}
 			],
 			"sid": 884411708994693
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 166315439287198,
+					"parameters": {
+						"object": "CastleIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 661187321689295,
+					"parameters": {
+						"layout": "Castle Select"
+					}
+				}
+			],
+			"sid": 344213571391853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 695575936642482,
+					"parameters": {
+						"object": "SearchIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 659038911912875,
+					"parameters": {
+						"layout": "Check list"
+					}
+				}
+			],
+			"sid": 506953265519525
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 397399744238582,
+					"parameters": {
+						"object": "AccountIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 369862819857339,
+					"parameters": {
+						"layout": "Acount Screen"
+					}
+				}
+			],
+			"sid": 314207750252748
 		}
 	],
 	"sid": 889684610355628

@@ -1,7 +1,7 @@
 {
-	"name": "Island",
+	"name": "CastellCoch",
 	"plugin-id": "Sprite",
-	"sid": 791942334258502,
+	"sid": 917754659020860,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,24 +11,24 @@
 			{
 				"frames": [
 					{
-						"width": 1090,
-						"height": 254,
+						"width": 380,
+						"height": 253,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2452147,
+						"imageSpriteId": 4243700,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
-								1,
+								0.06315789473684211,
 								0,
 								1,
+								0.09486166007905138,
+								0.9342105263157895,
 								1,
 								0,
-								0.9960629921259843
+								0.9051383399209486
 							]
 						},
 						"useCollisionPoly": true,
@@ -36,7 +36,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 511641400732152,
+				"sid": 334208988098183,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -36,64 +36,6 @@
 					}
 				},
 				{
-					"type": "Island",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 31,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 539,
-						"y": 1794,
-						"width": 1086,
-						"height": 252.76809620810593,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CastleIcon",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 32,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 158,
-						"y": 1794,
-						"width": 190.28620915551517,
-						"height": 190.28620915551517,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Seperator",
 					"properties": {
 						"initially-visible": true,
@@ -152,24 +94,40 @@
 					}
 				},
 				{
-					"type": "AccountIcon",
+					"type": "AccountTitle",
 					"properties": {
+						"text": "Your account",
+						"enable-bbcode": true,
+						"font": "monpspace",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"read-aloud": false
 					},
-					"uid": 35,
+					"uid": 9,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 927,
-						"y": 1796,
-						"width": 229.6775401661033,
-						"height": 230.31553333323137,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 359,
+						"y": 106,
+						"width": 361,
+						"height": 83,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -181,7 +139,7 @@
 					}
 				},
 				{
-					"type": "SearchIcon",
+					"type": "Island",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -189,14 +147,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 36,
+					"uid": 31,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 540,
-						"y": 1803,
-						"width": 174.54632031972432,
-						"height": 174.54632031972432,
+						"x": 541,
+						"y": 1792,
+						"width": 1078.96,
+						"height": 256.812386,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -239,40 +197,82 @@
 					}
 				},
 				{
-					"type": "AccountTitle",
+					"type": "CastleIcon",
 					"properties": {
-						"text": "Your account",
-						"enable-bbcode": true,
-						"font": "monpspace",
-						"size": 50,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 155,
+						"y": 1796,
+						"width": 169.37026843110544,
+						"height": 169.37026843110544,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AccountIcon",
+					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 9,
+					"uid": 35,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 359,
-						"y": 106,
-						"width": 361,
-						"height": 83,
-						"originX": 0,
-						"originY": 0,
+						"x": 915,
+						"y": 1789,
+						"width": 158.666932,
+						"height": 159.107674,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SearchIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 36,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 534,
+						"y": 1796,
+						"width": 144.532049524256,
+						"height": 144.532049524256,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

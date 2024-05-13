@@ -71,10 +71,7 @@
 			"IconHolder",
 			"Title",
 			"QRCamera",
-			"CheckIcon",
-			"Dragons",
-			"DragonsText",
-			"DragonsQuestion"
+			"CheckIcon"
 		],
 		"subfolders": [
 			{
@@ -107,7 +104,8 @@
 					},
 					{
 						"items": [
-							"Cardiff"
+							"Cardiff",
+							"CardiffTitle"
 						],
 						"subfolders": [],
 						"name": "Cardiff"
@@ -122,6 +120,34 @@
 						],
 						"subfolders": [],
 						"name": "Island"
+					},
+					{
+						"items": [
+							"Chepstow"
+						],
+						"subfolders": [],
+						"name": "Chepstow"
+					},
+					{
+						"items": [
+							"CastellCoch"
+						],
+						"subfolders": [],
+						"name": "Castell coch"
+					},
+					{
+						"items": [
+							"ConwyCastle"
+						],
+						"subfolders": [],
+						"name": "Conwy"
+					},
+					{
+						"items": [
+							"PembrokeCastle"
+						],
+						"subfolders": [],
+						"name": "Pembroke"
 					}
 				],
 				"name": "Castles Screen"
@@ -143,18 +169,34 @@
 			{
 				"items": [
 					"Caerphilly",
-					"Catapult",
 					"PopUpQuestion",
-					"CaerphillyAnswer1",
-					"CaerphillyAnswer2",
-					"CatapultText",
 					"PopUpQuestionText",
-					"CaerphillyAnswer3",
-					"CaerphillyAnswer4",
 					"LocalStorage",
 					"ScoreCaerphilly"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"CaerphillyAnswer1",
+							"CaerphillyAnswer2",
+							"CaerphillyAnswer3",
+							"CaerphillyAnswer4",
+							"Catapult",
+							"CatapultText"
+						],
+						"subfolders": [],
+						"name": "Catapult"
+					},
+					{
+						"items": [
+							"Dragons",
+							"DragonsQuestion",
+							"DragonsText"
+						],
+						"subfolders": [],
+						"name": "Dragons"
+					}
+				],
 				"name": "Caerphilly WCYF"
 			},
 			{
