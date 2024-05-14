@@ -3,7 +3,43 @@
 	"plugin-id": "Sprite",
 	"sid": 947320905227489,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "answer1",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 831251041287361
+		},
+		{
+			"name": "answer2",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 788588685777996
+		},
+		{
+			"name": "answer3",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 917881949510605
+		},
+		{
+			"name": "answer4",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 826984766359572
+		},
+		{
+			"name": "QuestionText",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 655433153661393
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

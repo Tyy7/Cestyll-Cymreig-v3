@@ -114,6 +114,14 @@
 					"parameters": {
 						"key": "\"c-Catapult\""
 					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 694443787432539,
+					"parameters": {
+						"key": "\"c-Dragon\""
+					}
 				}
 			],
 			"sid": 388616170895021
@@ -146,6 +154,30 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 509528393682790,
+					"parameters": {
+						"key": "\"c-Dragon\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 742559609493300,
+					"parameters": {
+						"key": "\"c-Dragon\""
+					}
+				}
+			],
+			"sid": 707049697674921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-item-get",
 					"objectClass": "LocalStorage",
 					"sid": 288590057625434,
@@ -166,6 +198,31 @@
 				}
 			],
 			"sid": 629485204690365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 787131813726294,
+					"parameters": {
+						"key": "\"c-Dragon\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 602691813179778,
+					"parameters": {
+						"variable": "cDragon",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 811034497446584
 		},
 		{
 			"eventType": "block",
@@ -205,6 +262,15 @@
 					"sid": 469543649633180,
 					"parameters": {
 						"variable": "cCatapult",
+						"value": "\"false\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 444965326935841,
+					"parameters": {
+						"variable": "cDragon",
 						"value": "\"false\""
 					}
 				}

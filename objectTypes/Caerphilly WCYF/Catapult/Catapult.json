@@ -17,6 +17,27 @@
 			"desc": "",
 			"show": true,
 			"sid": 354641377669526
+		},
+		{
+			"name": "answer3",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 247050038595929
+		},
+		{
+			"name": "answer4",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 533279113759888
+		},
+		{
+			"name": "QuestionText",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 898270197679528
 		}
 	],
 	"behaviorTypes": [],

@@ -33,6 +33,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "cDragon",
+			"type": "string",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 751080068219931
+		},
+		{
+			"eventType": "variable",
 			"name": "correctAnswer",
 			"type": "string",
 			"initialValue": "",
@@ -103,17 +113,99 @@
 							"parameters": {
 								"opacity": "25"
 							}
-						},
+						}
+					],
+					"sid": 686449230263719,
+					"children": [
 						{
-							"id": "set-opacity",
-							"objectClass": "CheckIcon",
-							"sid": 818181852347959,
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CheckIcon",
+									"sid": 583059466649494,
+									"parameters": {
+										"instance-variable": "name",
+										"comparison": 0,
+										"value": "\"Catapult\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "CheckIcon",
+									"sid": 802684246158315,
+									"parameters": {
+										"opacity": "100"
+									}
+								}
+							],
+							"sid": 240964286278616
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 504001999445375,
 							"parameters": {
-								"opacity": "100"
+								"variable": "cDragon",
+								"comparison": 0,
+								"value": "\"true\""
 							}
 						}
 					],
-					"sid": 686449230263719
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Dragons",
+							"sid": 495885123884343,
+							"parameters": {
+								"opacity": "25"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "DragonsText",
+							"sid": 658043960255397,
+							"parameters": {
+								"opacity": "25"
+							}
+						}
+					],
+					"sid": 758376049420392,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CheckIcon",
+									"sid": 247760584097518,
+									"parameters": {
+										"instance-variable": "name",
+										"comparison": 0,
+										"value": "\"Dragon\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "CheckIcon",
+									"sid": 278927961519268,
+									"parameters": {
+										"opacity": "100"
+									}
+								}
+							],
+							"sid": 607753002450748
+						}
+					]
 				}
 			]
 		},
@@ -141,105 +233,8 @@
 			],
 			"actions": [
 				{
-					"id": "set-opacity",
-					"objectClass": "PopUpQuestion",
-					"sid": 812722152544766,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "PopUpQuestion",
-					"sid": 639350734899186,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "PopUpQuestion",
-					"sid": 990043645956622,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "PopUpQuestionText",
-					"sid": 687041072475279,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "PopUpQuestionText",
-					"sid": 498151819135058,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer1",
-					"sid": 687568999840669,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "CaerphillyAnswer1",
-					"sid": 682764178117043,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer2",
-					"sid": 198539289686957,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "CaerphillyAnswer2",
-					"sid": 403558177601206,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer3",
-					"sid": 998797646324569,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "CaerphillyAnswer3",
-					"sid": 317932822795631,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer4",
-					"sid": 980382926095971,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "CaerphillyAnswer4",
-					"sid": 493798220128303,
-					"behaviorType": "Fade"
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 774765137112273,
-					"parameters": {
-						"variable": "Points",
-						"value": "25"
-					}
+					"callFunction": "loadQuestion",
+					"sid": 845599099861753
 				},
 				{
 					"id": "set-text",
@@ -255,6 +250,30 @@
 					"sid": 492683269512767,
 					"parameters": {
 						"text": "Catapult.answer2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 681466218351122,
+					"parameters": {
+						"text": "Catapult.answer3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 185405039236372,
+					"parameters": {
+						"text": "Catapult.answer4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CatapultText",
+					"sid": 363642255562305,
+					"parameters": {
+						"text": "Catapult.QuestionText"
 					}
 				},
 				{
@@ -277,6 +296,94 @@
 				}
 			],
 			"sid": 121056553164631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 128326865617073,
+					"parameters": {
+						"object": "Dragons"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 155243765563991,
+					"parameters": {
+						"variable": "cCatapult",
+						"comparison": 0,
+						"value": "\"false\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "loadQuestion",
+					"sid": 232830321945075
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 489489759369893,
+					"parameters": {
+						"text": "Dragons.answer1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 598351232938274,
+					"parameters": {
+						"text": "Dragons.answer2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 154075926963346,
+					"parameters": {
+						"text": "Dragons.answer3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 515067643796926,
+					"parameters": {
+						"text": "Dragons.answer4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CatapultText",
+					"sid": 377169115264660,
+					"parameters": {
+						"text": "Dragons.QuestionText"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 412276537500726,
+					"parameters": {
+						"variable": "correctAnswer",
+						"value": "\"Name 4\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 861158915578828,
+					"parameters": {
+						"variable": "whichQuestion",
+						"value": "\"Dragons\""
+					}
+				}
+			],
+			"sid": 442131171979800
 		},
 		{
 			"eventType": "block",
@@ -447,7 +554,52 @@
 					}
 				}
 			],
-			"sid": 765793751328626
+			"sid": 765793751328626,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "CaerphillyAnswer3",
+							"sid": 886799070490213,
+							"parameters": {
+								"text-to-compare": "correctAnswer",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "correctAnswer",
+							"sid": 375662630369176
+						}
+					],
+					"sid": 348112045739799
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 815013111209281
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 366776216587340,
+							"parameters": {
+								"variable": "Points",
+								"value": "-5"
+							}
+						}
+					],
+					"sid": 819552573509000
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -480,7 +632,52 @@
 					}
 				}
 			],
-			"sid": 812720696932886
+			"sid": 812720696932886,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "CaerphillyAnswer4",
+							"sid": 605500059235930,
+							"parameters": {
+								"text-to-compare": "correctAnswer",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "correctAnswer",
+							"sid": 786060536302829
+						}
+					],
+					"sid": 156067173915224
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 603336674891779
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 954601217468228,
+							"parameters": {
+								"variable": "Points",
+								"value": "-5"
+							}
+						}
+					],
+					"sid": 250235693257121
+				}
+			]
 		},
 		{
 			"functionName": "correctAnswer",
@@ -576,7 +773,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 235180108307832,
+							"sid": 587901257884427,
 							"parameters": {
 								"first-value": "whichQuestion",
 								"comparison": 0,
@@ -588,13 +785,65 @@
 						{
 							"id": "set-opacity",
 							"objectClass": "Catapult",
-							"sid": 960086202331003,
+							"sid": 784618754697520,
 							"parameters": {
 								"opacity": "75"
 							}
 						}
 					],
-					"sid": 327235152641105
+					"sid": 233444109979218
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 551378837927372,
+							"parameters": {
+								"first-value": "whichQuestion",
+								"comparison": 0,
+								"second-value": "\"Dragons\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Dragons",
+							"sid": 979497698954289,
+							"parameters": {
+								"opacity": "75"
+							}
+						}
+					],
+					"sid": 501684254094006
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CheckIcon",
+							"sid": 866217653396882,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "whichQuestion"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "CheckIcon",
+							"sid": 328062016573887,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 603798132130932
 				}
 			]
 		},
@@ -723,6 +972,121 @@
 				}
 			],
 			"sid": 314207750252748
+		},
+		{
+			"functionName": "loadQuestion",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestion",
+					"sid": 141942230570439,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "PopUpQuestion",
+					"sid": 921485272372497,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PopUpQuestion",
+					"sid": 449732340356979,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PopUpQuestionText",
+					"sid": 205416148245832,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "PopUpQuestionText",
+					"sid": 443899526236031,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 612387757371944,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 561240973832771,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 832948722293633,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 818882975959341,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 487134035762190,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 812118966722750,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 610765867589942,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 375133756368431,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 650625865363081,
+					"parameters": {
+						"variable": "Points",
+						"value": "25"
+					}
+				}
+			],
+			"sid": 181514551802681
 		}
 	],
 	"sid": 889684610355628

@@ -5,7 +5,39 @@
 			"name": "Background",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 83,
+					"instanceVariables": {
+						"name": "Dragon"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 773,
+						"y": 508,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 881830433546697,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -113,7 +145,13 @@
 						"live-preview": false
 					},
 					"uid": 70,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"answer1": "Name 1",
+						"answer2": "Name 2",
+						"answer3": "Name 3",
+						"answer4": "Name 4",
+						"QuestionText": "What are these dragon's names?"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 780,
@@ -234,7 +272,10 @@
 					"uid": 45,
 					"instanceVariables": {
 						"answer1": "400 BC",
-						"answer2": "300 BC"
+						"answer2": "300 BC",
+						"answer3": "380 BC",
+						"answer4": "450 BC",
+						"QuestionText": "When was the catapult invented"
 					},
 					"behaviors": {},
 					"world": {
@@ -309,7 +350,9 @@
 						"live-preview": false
 					},
 					"uid": 46,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"name": "Catapult"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 226,
