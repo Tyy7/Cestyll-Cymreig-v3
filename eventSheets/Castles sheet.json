@@ -122,6 +122,14 @@
 					"parameters": {
 						"key": "\"c-Dragon\""
 					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 311147163081403,
+					"parameters": {
+						"key": "\"c-Destroy\""
+					}
 				}
 			],
 			"sid": 388616170895021
@@ -178,6 +186,30 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 482007414357522,
+					"parameters": {
+						"key": "\"c-Destroy\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 728208252667729,
+					"parameters": {
+						"key": "\"c-Destroy\""
+					}
+				}
+			],
+			"sid": 583263954115937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-item-get",
 					"objectClass": "LocalStorage",
 					"sid": 288590057625434,
@@ -228,6 +260,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 768168011737988,
+					"parameters": {
+						"key": "\"c-Destroy\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 440502897139485,
+					"parameters": {
+						"variable": "cDestroy",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 175664593980239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-double-tap",
 					"objectClass": "Touch",
 					"sid": 905877792528153
@@ -271,6 +328,15 @@
 					"sid": 444965326935841,
 					"parameters": {
 						"variable": "cDragon",
+						"value": "\"false\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 136476475862524,
+					"parameters": {
+						"variable": "cDestroy",
 						"value": "\"false\""
 					}
 				}

@@ -1,0 +1,86 @@
+{
+	"name": "ghost",
+	"plugin-id": "Sprite",
+	"sid": 437221329486256,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "answer1",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 401591630360735
+		},
+		{
+			"name": "answer2",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 923749476545723
+		},
+		{
+			"name": "answer3",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 441814152092504
+		},
+		{
+			"name": "answer4",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 539665352686134
+		},
+		{
+			"name": "QuestionText",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 725251300178170
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 225,
+						"height": 222,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 870046,
+						"collisionPoly": {
+							"points": [
+								0.04888888888888889,
+								0,
+								1,
+								0.05405405405405406,
+								0.9511111111111111,
+								1,
+								0,
+								0.9504504504504504
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 564954853095437,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

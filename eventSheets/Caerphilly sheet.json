@@ -43,6 +43,46 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "cDestroy",
+			"type": "string",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 646362049276692
+		},
+		{
+			"eventType": "variable",
+			"name": "cCreate",
+			"type": "string",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 451607891342523
+		},
+		{
+			"eventType": "variable",
+			"name": "cGhost",
+			"type": "string",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 802449333536847
+		},
+		{
+			"eventType": "variable",
+			"name": "cSize",
+			"type": "string",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 832225985179255
+		},
+		{
+			"eventType": "variable",
 			"name": "correctAnswer",
 			"type": "string",
 			"initialValue": "",
@@ -63,6 +103,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "InQuestion",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 582179321134878
+		},
+		{
+			"eventType": "variable",
 			"name": "CheckIcon",
 			"type": "boolean",
 			"initialValue": "false",
@@ -80,7 +130,17 @@
 					"sid": 346514508813384
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 647843392433254,
+					"parameters": {
+						"variable": "InQuestion",
+						"value": "false"
+					}
+				}
+			],
 			"sid": 203205474183076,
 			"children": [
 				{
@@ -229,6 +289,15 @@
 						"comparison": 0,
 						"value": "\"false\""
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 541088536842936,
+					"parameters": {
+						"variable": "InQuestion"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -270,8 +339,8 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "CatapultText",
-					"sid": 363642255562305,
+					"objectClass": "PopUpQuestionText",
+					"sid": 762058382189692,
 					"parameters": {
 						"text": "Catapult.QuestionText"
 					}
@@ -309,6 +378,15 @@
 					}
 				},
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 342429316543880,
+					"parameters": {
+						"variable": "InQuestion"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 155243765563991,
@@ -327,50 +405,50 @@
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer1",
-					"sid": 489489759369893,
+					"sid": 567806133604584,
 					"parameters": {
-						"text": "Dragons.answer1"
+						"text": "Sprite.answer1"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer2",
-					"sid": 598351232938274,
+					"sid": 959492135967942,
 					"parameters": {
-						"text": "Dragons.answer2"
+						"text": "Sprite.answer2"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer3",
-					"sid": 154075926963346,
+					"sid": 552176472947771,
 					"parameters": {
-						"text": "Dragons.answer3"
+						"text": "Sprite.answer3"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer4",
-					"sid": 515067643796926,
+					"sid": 458545263985209,
 					"parameters": {
-						"text": "Dragons.answer4"
+						"text": "Sprite.answer4"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CatapultText",
-					"sid": 377169115264660,
+					"sid": 440719774466512,
 					"parameters": {
-						"text": "Dragons.QuestionText"
+						"text": "Sprite.QuestionText"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 412276537500726,
+					"sid": 347644457568965,
 					"parameters": {
 						"variable": "correctAnswer",
-						"value": "\"Name 4\""
+						"value": "\"Dewie & Dwynwen\""
 					}
 				},
 				{
@@ -391,22 +469,401 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 194172549814610,
+					"parameters": {
+						"object": "Sprite"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 244885850807344,
+					"parameters": {
+						"variable": "InQuestion"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 970006458605694,
+					"parameters": {
+						"variable": "cDestroy",
+						"comparison": 0,
+						"value": "\"false\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "loadQuestion",
+					"sid": 279121947519512
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 735041896436851,
+					"parameters": {
+						"text": "Dragons.answer1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 651767203857366,
+					"parameters": {
+						"text": "Dragons.answer2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 390303355530725,
+					"parameters": {
+						"text": "Dragons.answer3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 212361876512666,
+					"parameters": {
+						"text": "Dragons.answer4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CatapultText",
+					"sid": 511321898729394,
+					"parameters": {
+						"text": "Dragons.QuestionText"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 780921433834930,
+					"parameters": {
+						"variable": "correctAnswer",
+						"value": "\"Llywelyn Bren\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 566819970854635,
+					"parameters": {
+						"variable": "whichQuestion",
+						"value": "\"Destroy\""
+					}
+				}
+			],
+			"sid": 738167876023307
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 928514421960674,
+					"parameters": {
+						"object": "BluePrint"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 737028014014632,
+					"parameters": {
+						"variable": "InQuestion"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 535918306521807,
+					"parameters": {
+						"variable": "cCreate",
+						"comparison": 0,
+						"value": "\"false\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "loadQuestion",
+					"sid": 626973263791715
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 495048566340138,
+					"parameters": {
+						"text": "BluePrint.answer1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 564805807691002,
+					"parameters": {
+						"text": "BluePrint.answer2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 629640875068569,
+					"parameters": {
+						"text": "BluePrint.answer3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 449570532674432,
+					"parameters": {
+						"text": "BluePrint.answer4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CatapultText",
+					"sid": 892628704150447,
+					"parameters": {
+						"text": "BluePrint.QuestionText"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 503654338692482,
+					"parameters": {
+						"variable": "correctAnswer",
+						"value": "\"Lord Gilbert de Clare\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 812201234039605,
+					"parameters": {
+						"variable": "whichQuestion",
+						"value": "\"BluePrint\""
+					}
+				}
+			],
+			"sid": 537040891068651
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 738386760297544,
+					"parameters": {
+						"object": "ruler"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 987926591992225,
+					"parameters": {
+						"variable": "InQuestion"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 274328271293012,
+					"parameters": {
+						"variable": "cCreate",
+						"comparison": 0,
+						"value": "\"false\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "loadQuestion",
+					"sid": 318564169784477
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 832014445545740,
+					"parameters": {
+						"text": "ruler.answer1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 978856671055222,
+					"parameters": {
+						"text": "ruler.answer2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 231432282749531,
+					"parameters": {
+						"text": "ruler.answer3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 123441331045052,
+					"parameters": {
+						"text": "ruler.answer4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CatapultText",
+					"sid": 622746328161743,
+					"parameters": {
+						"text": "ruler.QuestionText"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 691651943345916,
+					"parameters": {
+						"variable": "correctAnswer",
+						"value": "\"1st\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 519749717777986,
+					"parameters": {
+						"variable": "whichQuestion",
+						"value": "\"Ruler\""
+					}
+				}
+			],
+			"sid": 311308345239430
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 327884018908233,
+					"parameters": {
+						"object": "ghost"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 616369993172672,
+					"parameters": {
+						"variable": "InQuestion"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 639534046743711,
+					"parameters": {
+						"variable": "cCreate",
+						"comparison": 0,
+						"value": "\"false\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "loadQuestion",
+					"sid": 533787144846719
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer1",
+					"sid": 779543788862613,
+					"parameters": {
+						"text": "ghost.answer1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer2",
+					"sid": 829292052554548,
+					"parameters": {
+						"text": "ghost.answer2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer3",
+					"sid": 564462552370678,
+					"parameters": {
+						"text": "ghost.answer3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "CaerphillyAnswer4",
+					"sid": 854684250854213,
+					"parameters": {
+						"text": "ghost.answer4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PopUpQuestionText",
+					"sid": 326117190759626,
+					"parameters": {
+						"text": "ghost.QuestionText"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 325723440023199,
+					"parameters": {
+						"variable": "correctAnswer",
+						"value": "\"The Green Lady\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 388814588332165,
+					"parameters": {
+						"variable": "whichQuestion",
+						"value": "\"Ghost\""
+					}
+				}
+			],
+			"sid": 581843717257013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 902062632074109,
 					"parameters": {
 						"object": "CaerphillyAnswer1"
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-opacity",
-					"objectClass": "CheckIcon",
-					"sid": 112812128261230,
-					"parameters": {
-						"opacity": "100"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 118132914307142,
 			"children": [
 				{
@@ -448,6 +905,14 @@
 								"variable": "Points",
 								"value": "-5"
 							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CaerphillyAnswer1",
+							"sid": 928126137653564,
+							"parameters": {
+								"opacity": "25"
+							}
 						}
 					],
 					"sid": 634704736639140
@@ -466,16 +931,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer2",
-					"sid": 854769822479553,
-					"parameters": {
-						"opacity": "25"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 993828735659615,
 			"children": [
 				{
@@ -510,6 +966,14 @@
 					],
 					"actions": [
 						{
+							"id": "set-opacity",
+							"objectClass": "CaerphillyAnswer2",
+							"sid": 834724354248716,
+							"parameters": {
+								"opacity": "25"
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 650727394426610,
@@ -535,25 +999,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 252554038205417,
-					"parameters": {
-						"variable": "Points",
-						"value": "-5"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer3",
-					"sid": 784156213521669,
-					"parameters": {
-						"opacity": "25"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 765793751328626,
 			"children": [
 				{
@@ -588,6 +1034,14 @@
 					],
 					"actions": [
 						{
+							"id": "set-opacity",
+							"objectClass": "CaerphillyAnswer3",
+							"sid": 533502555785225,
+							"parameters": {
+								"opacity": "25"
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 366776216587340,
@@ -613,25 +1067,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 980173919335563,
-					"parameters": {
-						"variable": "Points",
-						"value": "-5"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "CaerphillyAnswer4",
-					"sid": 147947709542797,
-					"parameters": {
-						"opacity": "25"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 812720696932886,
 			"children": [
 				{
@@ -665,6 +1101,14 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "CaerphillyAnswer4",
+							"sid": 128114139349306,
+							"parameters": {
+								"opacity": "25"
+							}
+						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
@@ -749,8 +1193,8 @@
 				},
 				{
 					"id": "set-opacity",
-					"objectClass": "PopUpQuestionText",
-					"sid": 856867967563515,
+					"objectClass": "CatapultText",
+					"sid": 971085754120530,
 					"parameters": {
 						"opacity": "0"
 					}
@@ -762,6 +1206,23 @@
 					"parameters": {
 						"key": "\"c-\" & whichQuestion",
 						"value": "\"true\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 406066855306303,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 651155471015858,
+					"parameters": {
+						"variable": "InQuestion",
+						"value": "false"
 					}
 				}
 			],
@@ -818,6 +1279,110 @@
 						}
 					],
 					"sid": 501684254094006
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 768656187289252,
+							"parameters": {
+								"first-value": "whichQuestion",
+								"comparison": 0,
+								"second-value": "\"Destroy\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Sprite",
+							"sid": 457279693860688,
+							"parameters": {
+								"opacity": "75"
+							}
+						}
+					],
+					"sid": 942473422822766
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 324792323567097,
+							"parameters": {
+								"first-value": "whichQuestion",
+								"comparison": 0,
+								"second-value": "\"Create\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "BluePrint",
+							"sid": 274878115929256,
+							"parameters": {
+								"opacity": "75"
+							}
+						}
+					],
+					"sid": 613597890669992
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 998303896189018,
+							"parameters": {
+								"first-value": "whichQuestion",
+								"comparison": 0,
+								"second-value": "\"Create\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "ruler",
+							"sid": 810046496474769,
+							"parameters": {
+								"opacity": "75"
+							}
+						}
+					],
+					"sid": 463159621469529
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 980863473089489,
+							"parameters": {
+								"first-value": "whichQuestion",
+								"comparison": 0,
+								"second-value": "\"Create\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "ghost",
+							"sid": 800893276358352,
+							"parameters": {
+								"opacity": "75"
+							}
+						}
+					],
+					"sid": 911099625243525
 				},
 				{
 					"eventType": "block",
@@ -1083,6 +1648,15 @@
 					"parameters": {
 						"variable": "Points",
 						"value": "25"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 398657775570317,
+					"parameters": {
+						"variable": "InQuestion",
+						"value": "true"
 					}
 				}
 			],

@@ -71,7 +71,8 @@
 			"IconHolder",
 			"Title",
 			"QRCamera",
-			"CheckIcon"
+			"CheckIcon",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -97,7 +98,10 @@
 							"CaerphillyIcon",
 							"CaerphillyTitle",
 							"HolderText",
-							"ScoreText"
+							"ScoreText",
+							"BluePrint",
+							"ruler",
+							"ghost"
 						],
 						"subfolders": [],
 						"name": "Caerphilly"

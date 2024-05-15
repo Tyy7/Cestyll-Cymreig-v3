@@ -1,0 +1,94 @@
+{
+	"name": "BluePrint",
+	"plugin-id": "Sprite",
+	"sid": 353174360296435,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "answer1",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 135411502936450
+		},
+		{
+			"name": "answer2",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 887485005703121
+		},
+		{
+			"name": "answer3",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 389763651721811
+		},
+		{
+			"name": "answer4",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 867435039820646
+		},
+		{
+			"name": "QuestionText",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 297176847334011
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 295,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4829089,
+						"collisionPoly": {
+							"points": [
+								0.05423728813559322,
+								0,
+								0.9830508474576272,
+								0.03508771929824561,
+								1,
+								0.09941520467836257,
+								0.9898305084745763,
+								0.9473684210526315,
+								0.9423728813559322,
+								1,
+								0.01694915254237288,
+								0.9649122807017544,
+								0,
+								0.9064327485380117,
+								0.010169491525423728,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 379371728778575,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
