@@ -130,6 +130,30 @@
 					"parameters": {
 						"key": "\"c-Destroy\""
 					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 247360885348185,
+					"parameters": {
+						"key": "\"c-Create\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 908262346269743,
+					"parameters": {
+						"key": "\"c-Ghost\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 787367486521261,
+					"parameters": {
+						"key": "\"c-Size\""
+					}
 				}
 			],
 			"sid": 388616170895021
@@ -210,6 +234,78 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 191818721943236,
+					"parameters": {
+						"key": "\"c-Create\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 199521860906426,
+					"parameters": {
+						"key": "\"c-Create\""
+					}
+				}
+			],
+			"sid": 779505294833271
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 405725489897906,
+					"parameters": {
+						"key": "\"c-Ghost\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 442624542431286,
+					"parameters": {
+						"key": "\"c-Ghost\""
+					}
+				}
+			],
+			"sid": 873940642366238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 943113616638256,
+					"parameters": {
+						"key": "\"c-Size\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 944786103669204,
+					"parameters": {
+						"key": "\"c-Size\""
+					}
+				}
+			],
+			"sid": 447340035638077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-item-get",
 					"objectClass": "LocalStorage",
 					"sid": 288590057625434,
@@ -285,6 +381,81 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 118603907319051,
+					"parameters": {
+						"key": "\"c-Create\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 869849424059451,
+					"parameters": {
+						"variable": "cCreate",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 566129024059744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 178793197924984,
+					"parameters": {
+						"key": "\"c-Ghost\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 680977449440498,
+					"parameters": {
+						"variable": "cGhost",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 214144367093273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 616203602684100,
+					"parameters": {
+						"key": "\"c-Size\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 926473807337446,
+					"parameters": {
+						"variable": "cSize",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 339198193424480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-double-tap",
 					"objectClass": "Touch",
 					"sid": 905877792528153
@@ -337,6 +508,33 @@
 					"sid": 136476475862524,
 					"parameters": {
 						"variable": "cDestroy",
+						"value": "\"false\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 646517722260226,
+					"parameters": {
+						"variable": "cCreate",
+						"value": "\"false\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 984715637357798,
+					"parameters": {
+						"variable": "cGhost",
+						"value": "\"false\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 945070425314160,
+					"parameters": {
+						"variable": "cSize",
 						"value": "\"false\""
 					}
 				}
