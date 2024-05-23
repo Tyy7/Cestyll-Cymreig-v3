@@ -372,7 +372,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 128326865617073,
+					"sid": 813181230103224,
 					"parameters": {
 						"object": "Dragons"
 					}
@@ -405,41 +405,41 @@
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer1",
-					"sid": 567806133604584,
+					"sid": 142869572150971,
 					"parameters": {
-						"text": "Sprite.answer1"
+						"text": "Dragons.answer1"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer2",
-					"sid": 959492135967942,
+					"sid": 308378608323190,
 					"parameters": {
-						"text": "Sprite.answer2"
+						"text": "Dragons.answer2"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer3",
-					"sid": 552176472947771,
+					"sid": 973307674812869,
 					"parameters": {
-						"text": "Sprite.answer3"
+						"text": "Dragons.answer3"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer4",
-					"sid": 458545263985209,
+					"sid": 923714691846475,
 					"parameters": {
-						"text": "Sprite.answer4"
+						"text": "Dragons.answer4"
 					}
 				},
 				{
 					"id": "set-text",
-					"objectClass": "CatapultText",
-					"sid": 440719774466512,
+					"objectClass": "PopUpQuestionText",
+					"sid": 953280538327395,
 					"parameters": {
-						"text": "Sprite.QuestionText"
+						"text": "Dragons.QuestionText"
 					}
 				},
 				{
@@ -469,7 +469,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 194172549814610,
+					"sid": 668782113503818,
 					"parameters": {
 						"object": "Sprite"
 					}
@@ -502,41 +502,41 @@
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer1",
-					"sid": 735041896436851,
+					"sid": 377389456618938,
 					"parameters": {
-						"text": "Dragons.answer1"
+						"text": "Sprite.answer1"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer2",
-					"sid": 651767203857366,
+					"sid": 106802372342073,
 					"parameters": {
-						"text": "Dragons.answer2"
+						"text": "Sprite.answer2"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer3",
-					"sid": 390303355530725,
+					"sid": 131115398553759,
 					"parameters": {
-						"text": "Dragons.answer3"
+						"text": "Sprite.answer3"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "CaerphillyAnswer4",
-					"sid": 212361876512666,
+					"sid": 265518297507168,
 					"parameters": {
-						"text": "Dragons.answer4"
+						"text": "Sprite.answer4"
 					}
 				},
 				{
 					"id": "set-text",
-					"objectClass": "CatapultText",
-					"sid": 511321898729394,
+					"objectClass": "PopUpQuestionText",
+					"sid": 393767791190372,
 					"parameters": {
-						"text": "Dragons.QuestionText"
+						"text": "Sprite.QuestionText"
 					}
 				},
 				{
@@ -630,8 +630,8 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "CatapultText",
-					"sid": 892628704150447,
+					"objectClass": "PopUpQuestionText",
+					"sid": 182659877807507,
 					"parameters": {
 						"text": "BluePrint.QuestionText"
 					}
@@ -727,8 +727,8 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "CatapultText",
-					"sid": 622746328161743,
+					"objectClass": "PopUpQuestionText",
+					"sid": 595407842569108,
 					"parameters": {
 						"text": "ruler.QuestionText"
 					}
@@ -1193,8 +1193,8 @@
 				},
 				{
 					"id": "set-opacity",
-					"objectClass": "CatapultText",
-					"sid": 971085754120530,
+					"objectClass": "PopUpQuestionText",
+					"sid": 883367076724639,
 					"parameters": {
 						"opacity": "0"
 					}

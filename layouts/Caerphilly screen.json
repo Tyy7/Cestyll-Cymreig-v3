@@ -352,10 +352,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 931,
-						"y": 1807,
-						"width": 587.9745028252245,
-						"height": 589.6077653330723,
+						"x": 881,
+						"y": 1799,
+						"width": 164.2339388214013,
+						"height": 164.69014420701626,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -678,7 +678,7 @@
 					"world": {
 						"x": 789,
 						"y": 906,
-						"width": 322,
+						"width": 321.99999999999994,
 						"height": 299,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1047,10 +1047,10 @@
 						}
 					},
 					"world": {
-						"x": 143,
-						"y": 834,
-						"width": 495.7081293117449,
-						"height": 219,
+						"x": 131,
+						"y": 720,
+						"width": 415.7081293117449,
+						"height": 261,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1103,10 +1103,10 @@
 						}
 					},
 					"world": {
-						"x": 604,
-						"y": 837,
-						"width": 354.7869845189871,
-						"height": 252,
+						"x": 563,
+						"y": 715,
+						"width": 386.7869845189871,
+						"height": 259,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1159,10 +1159,10 @@
 						}
 					},
 					"world": {
-						"x": 154,
-						"y": 1018,
-						"width": 437.81046127291205,
-						"height": 155,
+						"x": 135,
+						"y": 1002,
+						"width": 399.81046127291205,
+						"height": 289,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1215,10 +1215,10 @@
 						}
 					},
 					"world": {
-						"x": 602,
-						"y": 1020,
-						"width": 420.7422013537506,
-						"height": 162,
+						"x": 545,
+						"y": 1007,
+						"width": 375.7422013537506,
+						"height": 295,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1275,51 +1275,6 @@
 						"y": 554,
 						"width": 507,
 						"height": 116,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DragonsQuestion",
-					"properties": {
-						"text": "What are these dragons called?",
-						"enable-bbcode": true,
-						"font": "monospace",
-						"size": 45,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 72,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 168,
-						"y": 552,
-						"width": 737,
-						"height": 164,
 						"originX": 0,
 						"originY": 0,
 						"color": [
