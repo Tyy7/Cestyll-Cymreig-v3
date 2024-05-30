@@ -219,37 +219,6 @@
 					}
 				},
 				{
-					"type": "CheckIcon",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 46,
-					"instanceVariables": {
-						"name": "Catapult"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 226,
-						"y": 505,
-						"width": 201.6531675922796,
-						"height": 201.6531675922796,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Island",
 					"properties": {
 						"initially-visible": true,
@@ -864,6 +833,72 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				}
+			],
+			"sid": 243228913887463,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Ticks",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {
+						"name": "Create"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 789,
+						"y": 881,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				},
 				{
 					"type": "CheckIcon",
@@ -905,14 +940,45 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 102,
+					"uid": 46,
 					"instanceVariables": {
-						"name": "Create"
+						"name": "Catapult"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 789,
-						"y": 881,
+						"x": 226,
+						"y": 505,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 83,
+					"instanceVariables": {
+						"name": "Dragon"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 773,
+						"y": 508,
 						"width": 201.6531675922796,
 						"height": 201.6531675922796,
 						"originX": 0.5,
@@ -990,7 +1056,7 @@
 					}
 				}
 			],
-			"sid": 243228913887463,
+			"sid": 405974833635640,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -1002,12 +1068,12 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -1369,37 +1435,6 @@
 						"height": 116,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CheckIcon",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 83,
-					"instanceVariables": {
-						"name": "Dragon"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 773,
-						"y": 508,
-						"width": 201.6531675922796,
-						"height": 201.6531675922796,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,

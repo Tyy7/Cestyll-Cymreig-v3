@@ -421,11 +421,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "CheckIcon",
-									"sid": 449108131463560,
+									"sid": 855870997673449,
 									"parameters": {
 										"instance-variable": "name",
 										"comparison": 0,
-										"value": "\"Creation\""
+										"value": "\"Create\""
 									}
 								}
 							],
@@ -708,7 +708,35 @@
 							}
 						}
 					],
-					"sid": 344898197213904
+					"sid": 344898197213904,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CheckIcon",
+									"sid": 172321699204659,
+									"parameters": {
+										"instance-variable": "name",
+										"comparison": 0,
+										"value": "\"Destroy\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "CheckIcon",
+									"sid": 779792209930138,
+									"parameters": {
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 720569593507203
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -1824,6 +1852,7 @@
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 406066855306303,
+					"disabled": true,
 					"parameters": {
 						"seconds": "1.0"
 					}
@@ -1831,7 +1860,8 @@
 				{
 					"id": "wait-for-previous-actions",
 					"objectClass": "System",
-					"sid": 851989529859616
+					"sid": 851989529859616,
+					"disabled": true
 				}
 			],
 			"sid": 477027360443663,
