@@ -150,9 +150,17 @@
 				{
 					"id": "check-item-exists",
 					"objectClass": "LocalStorage",
-					"sid": 787367486521261,
+					"sid": 717642777064104,
 					"parameters": {
-						"key": "\"c-Size\""
+						"key": "\"c-Ruler\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 596039329592735,
+					"parameters": {
+						"key": "\"points\""
 					}
 				}
 			],
@@ -284,9 +292,9 @@
 				{
 					"id": "on-item-exists",
 					"objectClass": "LocalStorage",
-					"sid": 943113616638256,
+					"sid": 551634188877102,
 					"parameters": {
-						"key": "\"c-Size\""
+						"key": "\"c-Ruler\""
 					}
 				}
 			],
@@ -294,13 +302,37 @@
 				{
 					"id": "get-item",
 					"objectClass": "LocalStorage",
-					"sid": 944786103669204,
+					"sid": 445080145484290,
 					"parameters": {
-						"key": "\"c-Size\""
+						"key": "\"c-Ruler\""
 					}
 				}
 			],
 			"sid": 447340035638077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 315755693237744,
+					"parameters": {
+						"key": "\"points\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 179350942145420,
+					"parameters": {
+						"key": "\"points\""
+					}
+				}
+			],
+			"sid": 251043889331118
 		},
 		{
 			"eventType": "block",
@@ -433,9 +465,9 @@
 				{
 					"id": "on-item-get",
 					"objectClass": "LocalStorage",
-					"sid": 616203602684100,
+					"sid": 356894824220152,
 					"parameters": {
-						"key": "\"c-Size\""
+						"key": "\"c-Ruler\""
 					}
 				}
 			],
@@ -443,14 +475,39 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 926473807337446,
+					"sid": 806905236307804,
 					"parameters": {
-						"variable": "cSize",
+						"variable": "cRuler",
 						"value": "LocalStorage.ItemValue"
 					}
 				}
 			],
 			"sid": 339198193424480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 710878373896700,
+					"parameters": {
+						"key": "\"points\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 596232096685279,
+					"parameters": {
+						"variable": "CaerphillyScore",
+						"value": "int(LocalStorage.ItemValue)"
+					}
+				}
+			],
+			"sid": 374059372932646
 		},
 		{
 			"eventType": "block",
@@ -532,10 +589,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 945070425314160,
+					"sid": 268373222417240,
 					"parameters": {
-						"variable": "cSize",
+						"variable": "cRuler",
 						"value": "\"false\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 753007988097935,
+					"parameters": {
+						"variable": "CaerphillyScore",
+						"value": "0"
 					}
 				}
 			],

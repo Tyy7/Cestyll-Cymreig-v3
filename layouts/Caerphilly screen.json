@@ -5,39 +5,7 @@
 			"name": "Background",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "CheckIcon",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 83,
-					"instanceVariables": {
-						"name": "Dragon"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 773,
-						"y": 508,
-						"width": 201.6531675922796,
-						"height": 201.6531675922796,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 881830433546697,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -523,7 +491,7 @@
 					}
 				},
 				{
-					"type": "CatapultText",
+					"type": "CreateText",
 					"properties": {
 						"text": "Catapult",
 						"enable-bbcode": true,
@@ -613,7 +581,7 @@
 					}
 				},
 				{
-					"type": "CatapultText",
+					"type": "CreateText",
 					"properties": {
 						"text": "Destruction",
 						"enable-bbcode": true,
@@ -693,7 +661,7 @@
 					}
 				},
 				{
-					"type": "CatapultText",
+					"type": "CreateText",
 					"properties": {
 						"text": "Creation",
 						"enable-bbcode": true,
@@ -773,7 +741,7 @@
 					}
 				},
 				{
-					"type": "CatapultText",
+					"type": "CreateText",
 					"properties": {
 						"text": "Hauntings",
 						"enable-bbcode": true,
@@ -853,7 +821,7 @@
 					}
 				},
 				{
-					"type": "CatapultText",
+					"type": "CreateText",
 					"properties": {
 						"text": "Size",
 						"enable-bbcode": true,
@@ -892,6 +860,130 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"instanceVariables": {
+						"name": "Destroy"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 231,
+						"y": 891,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {
+						"name": "Create"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 789,
+						"y": 881,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 103,
+					"instanceVariables": {
+						"name": "Ruler"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 238,
+						"y": 1250,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 104,
+					"instanceVariables": {
+						"name": "Ghost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 785,
+						"y": 1234,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1162,7 +1254,7 @@
 						"x": 135,
 						"y": 1002,
 						"width": 399.81046127291205,
-						"height": 289,
+						"height": 266,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1277,6 +1369,37 @@
 						"height": 116,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CheckIcon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 83,
+					"instanceVariables": {
+						"name": "Dragon"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 773,
+						"y": 508,
+						"width": 201.6531675922796,
+						"height": 201.6531675922796,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
