@@ -72,7 +72,9 @@
 			"Title",
 			"QRCamera",
 			"CheckIcon",
-			"Sprite"
+			"Sprite",
+			"PlayerLevel",
+			"Peasant"
 		],
 		"subfolders": [
 			{
